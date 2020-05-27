@@ -216,7 +216,11 @@ section {
 /* About me */
 
 .middle{
-   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  width: auto;
   }
 
   .counting-sec{
@@ -308,7 +312,6 @@ img:hover {
   margin: 0 auto;
 }
 
-
 .review .review-item h3 {
   font-size: 23px;
   font-weight: bold;
@@ -322,11 +325,10 @@ img:hover {
   margin: 0 0 15px 0;
 }
 
-
 .review .review-item p {
   font-style: italic;
   line-height: 1.5;
-  margin: 0  300px;
+  margin: 0 300px;
   color: rgba(240, 240, 240, 0.938);
 }
 
@@ -432,7 +434,6 @@ img:hover {
   justify-content: center;
   align-items: center;
 }
-
 
 .contacts .info-box i {
   display: inline-block;
@@ -586,16 +587,12 @@ img:hover {
     width: 100%;
       }
 
-    .aboutme .col-right {
-      width: 60%;
-      }
-     
       .section-title p {
         font-size: 13px;
       }
 
       .img-area {
-        width: 80%;
+        width: 100%;
       }
 
       .wrapperr .item {
@@ -606,35 +603,19 @@ img:hover {
 
 @media (max-width: 991px) {
 
-body {
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-  .aboutme .col-left img {
-    width: 90%;
-    margin-top: 45px;
+      body {
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
       }
 
-    .aboutme .col-right {
-      width: 45%;
-      padding-left: 55px;
-      }
-     
-      .comtainer {
-        display: grid;
-        grid-template-columns: 450px 800px 750px;
-        
-      }
-      
-      .aboutme h4 {
-  font-size: 18px;
+      .section-title span {
+        font-size: 43px;
       }
 
-      .aboutme h6{
-  font-size: 14px;
+      .section-title h2 {
+        font-size: 31px;
       }
 
       .section-title p {
@@ -642,14 +623,50 @@ body {
         font-size: 13px;
       }
 
-      .img-area {
+      .gotopbtn{
+       font-size: 25px;
+      }
+
+      .middle .inner-width .col {
         width: 100%;
       }
 
+      .review {
+        height: 60vh;
+        padding: 50px 0;
+      }
+        
+      .review .owl-dot {
+       width: 10px;
+       height: 10px;
+      }
+
+      .review .review-item p {
+        font-style: italic;
+        line-height: 1.5;
+        margin: 0 100px;
+      }
+
       .wrapperr .item {
-        width: 170px;
+        width: 100px;
         height: auto;
         margin: 0 7px;
+      }
+
+      .contacts .info-box {
+        width: calc(33% - 100px);
+      }
+
+      .contacts .info-box i {
+        font-size: 20px;
+      }
+            
+      .contacts .info-box h3 {
+        font-size: 17px;
+      }
+      
+      .contacts .info-box p {
+        font-size: 13px;
       }
     }
 
@@ -679,18 +696,110 @@ body {
       position: fixed;
   }
   
-  .gotopbtn {
-    width: 35px;
-    height: 35px;
-  }
-
   #igor .igor-container img {
-    width: 200%;
+    width: 100%;
   }
-}
-@media (max-width: 414px) {
-  .reviews__img {
-      right: -100px;
+
+  .section-title span {
+    font-size: 43px;
   }
+
+  .section-title h2 {
+    font-size: 31px;
+  }
+
+  .wrapperr .item {
+    width: 170px;
+    height: auto;
+    margin: 0 15px;
+  }
+
+  .contacts .info-box i {
+    font-size: 24px;
+  }
+        
 }
 
+@media (max-width: 669px) {
+  .middle {
+    width: 50%;
+    text-align: center;
+  }
+   .col{
+   padding: 0 15px;
+ }
+
+ .col i{
+   font-size: 37px;
+ }
+
+ .col span {
+   font-size: 20px;
+ }
+
+ .num{
+   font-size: 30px;
+ }
+}
+
+@media (max-width: 556px) {
+  .counting-sec{
+    padding: 10px 0;
+    width: 35%;
+    }
+ 
+  .col{
+    padding: 0 15px;
+  }
+  .contacts .info-box {
+      width: calc(33% - 60px);
+     }
+  }
+
+@media (max-width: 456px) {
+
+  .counting-sec{
+    width: 30%;
+    }
+ }
+
+ @media (max-width: 387px) {
+
+  .counting-sec{
+    width: 26%;
+    }
+
+    .review {
+      height: 60vh;
+      padding: 50px 0;
+    }
+      
+    .review .owl-dot {
+     width: 10px;
+     height: 10px;
+    }
+
+    .review .review-item p {
+      font-size: 14px;
+      font-style: italic;
+      line-height: 1.5;
+      margin: 0 50px;
+    }
+
+    .wrapperr .item {
+      width: 150px;
+      height: auto;
+      margin: 0 15px;
+    }
+  
+    
+
+ @media (max-width: 339px) {
+ #igor h1 {
+   text-align: center;
+ }
+
+  .counting-sec{
+    width: 20%;
+    }
+ }
