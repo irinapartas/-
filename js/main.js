@@ -24,7 +24,8 @@ $(function() {
               header.removeClass("fixed");
           }
       }
-  
+
+
       // Scroll
   
           $("[data-scroll]").on("click", function(event) {
@@ -52,14 +53,14 @@ $(function() {
          $(".num").counterUp({
     delay:10,time:1000
  });
- 
-          // Review
+
+ // Review
          $(".review-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
     items: 1
  
-});
+});         
 
-})(jQuery);
+});
