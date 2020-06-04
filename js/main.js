@@ -2,8 +2,7 @@ $(function() {
 
   // Fixed Header
       let header = $("#header");
-      let intro = $("#aboutme");
-      let introH = intro.innerHeight();
+      let introH = 100;
       let scrollPos = $(window).scrollTop();
       let nav = $("#nav");
       let navToggle = $("#navToggle");
@@ -11,11 +10,12 @@ $(function() {
       checkScroll(scrollPos, introH);
   
       $(window).on("scroll resize", function() {
-          introH = intro.innerHeight();
+
           scrollPos = $(this).scrollTop();
   
           checkScroll(scrollPos, introH);
       });
+
       function checkScroll(scrollPos, introH) {
   
           if( scrollPos > introH ) {
