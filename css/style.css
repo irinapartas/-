@@ -908,7 +908,7 @@ textarea {
   .wrapperr .item {
     width: 100px;
     height: auto;
-    margin: 0 7px;
+    margin: 7px 7px;
   }
   .contact-page {
     max-width: 600px;
@@ -955,7 +955,7 @@ textarea {
   .wrapperr .item {
     width: 170px;
     height: auto;
-    margin: 0 15px;
+    margin: 15px 15px;
   }
   .contact-page {
     max-width: 500px;
